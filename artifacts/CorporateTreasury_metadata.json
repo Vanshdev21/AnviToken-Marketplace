@@ -1,0 +1,249 @@
+{
+	"compiler": {
+		"version": "0.8.34+commit.80d5c536"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "CorporateTreasury_IDExists",
+				"type": "error"
+			},
+			{
+				"inputs": [],
+				"name": "CorporateTreasury_InvalidAmount",
+				"type": "error"
+			},
+			{
+				"inputs": [],
+				"name": "CorporateTreasury_InvestmentNotExist",
+				"type": "error"
+			},
+			{
+				"inputs": [],
+				"name": "CorporateTreasury_NotAuthorized",
+				"type": "error"
+			},
+			{
+				"inputs": [],
+				"name": "CorporateTreasury_SelectContinent",
+				"type": "error"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "investor",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "assetName",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "principal",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "enum CorporateTreasury.Continent",
+						"name": "continent",
+						"type": "uint8"
+					}
+				],
+				"name": "InvestmentRecorded",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_assetName",
+						"type": "string"
+					},
+					{
+						"internalType": "enum CorporateTreasury.Continent",
+						"name": "_continent",
+						"type": "uint8"
+					},
+					{
+						"internalType": "enum CorporateTreasury.AssetClass",
+						"name": "_assetClass",
+						"type": "uint8"
+					}
+				],
+				"name": "addInvestment",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_id",
+						"type": "uint256"
+					}
+				],
+				"name": "getDaysUnderManagement",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "daysUnderMgmt",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "idUsed",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "ledger",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "investor",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "assetName",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "principal",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "timestamp",
+						"type": "uint256"
+					},
+					{
+						"internalType": "enum CorporateTreasury.Continent",
+						"name": "continent",
+						"type": "uint8"
+					},
+					{
+						"internalType": "enum CorporateTreasury.AssetClass",
+						"name": "assetClass",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "totalInvestmentsCount",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/CorporateTreasury.sol": "CorporateTreasury"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/CorporateTreasury.sol": {
+			"keccak256": "0x50cfa71cd1126b2b95d67b68f57f100428c6aff2d9548fb687f36e27b7cdfb9e",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://86e152f01a962cfd7b4682739e704fe983cc5d147fdb4d2e47291ea62a8d37aa",
+				"dweb:/ipfs/QmX8n8NhXzmxgSnUAwzW485RhkbMeMWtb7ZJJxy1rs5vPL"
+			]
+		}
+	},
+	"version": 1
+}
